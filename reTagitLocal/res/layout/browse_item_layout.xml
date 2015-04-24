@@ -1,0 +1,87 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/new_background"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".BrowseItemActivity" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/browse_text" />
+        
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+            
+            <Button
+	                android:id="@+id/sort_price_button"
+	                style="?android:attr/buttonStyleSmall"
+	                android:layout_width="wrap_content"
+	                android:layout_height="match_parent"
+	                android:text="@string/sort_price_text" />
+            <Button
+	                android:id="@+id/sort_date_button"
+	                style="?android:attr/buttonStyleSmall"
+	                android:layout_width="wrap_content"
+	                android:layout_height="match_parent"
+	                android:text="@string/sort_date_text" />
+            <Button
+	                android:id="@+id/sort_category_button"
+	                style="?android:attr/buttonStyleSmall"
+	                android:layout_width="wrap_content"
+	                android:layout_height="match_parent"
+	                android:text="@string/sort_cat_text" />
+            
+            
+        </LinearLayout>
+        
+        
+        
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="100dip"
+                android:text="@string/date_text" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="35dip"
+                android:text="@string/category_text" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/asking_price_text" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/itemsListView"
+        android:layout_width="match_parent"
+        android:layout_height="375dp"
+        android:layout_alignLeft="@+id/linearLayout1"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/linearLayout1" >
+
+    </ListView>
+
+</RelativeLayout>

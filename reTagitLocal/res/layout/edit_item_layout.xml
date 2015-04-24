@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:orientation="vertical"
+	android:background="@drawable/new_background">
+
+    <!-- Add Item Linear Layout -->
+	<LinearLayout
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content" >
+
+	    <!-- Text Line for Add New Item -->
+		<TextView 
+		    android:layout_height="wrap_content"
+			android:layout_width="wrap_content" 
+			android:text="@string/edit_item" />
+		
+	</LinearLayout>
+	
+	<!-- Middle Linear Layout -->
+	<LinearLayout
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:gravity="center"
+	    android:layout_marginLeft="30dp">
+
+	    <!-- Button for Pictures -->
+	    <ImageButton
+	        android:id="@+id/photo_button"
+	        android:layout_width="96dp"
+	        android:layout_height="match_parent"
+	        android:src="@drawable/ic_launcher" />
+
+	    <!-- Item Linear Layout -->
+	    <LinearLayout
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical" >
+
+	       <LinearLayout
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content" >
+
+	            <TextView
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="@string/set_id_no_text" />
+
+	            <EditText
+	                android:id="@+id/item_number"
+	                android:layout_width="214dp"
+	                android:layout_height="wrap_content"
+	                android:height="25dp"
+	                android:width="25dp" >
+
+	                <requestFocus />
+	                
+	            </EditText>
+	            
+	        </LinearLayout>
+
+	        <!-- Date Linear Layout -->
+	        <LinearLayout
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content" >
+
+	            <TextView
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="@string/set_date_text" />
+
+	            <TextView
+	                android:id="@+id/date"
+	                android:layout_width="271dp"
+	                android:layout_height="wrap_content"
+	                android:inputType="date" />
+
+	        </LinearLayout>
+
+	        <!-- Category Linear Layout -->
+	        <LinearLayout
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content" >
+
+	            <TextView
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="@string/set_category_text" />
+
+	            <EditText
+	                android:id="@+id/category"
+	                android:layout_width="238dp"
+	                android:layout_height="wrap_content"
+	                android:height="25dp"
+	                android:width="25dp" />
+
+	        </LinearLayout>
+	        
+	    </LinearLayout>
+	   	 
+	</LinearLayout>
+	
+	<!-- Description Linear Layout -->
+
+	<LinearLayout
+	    android:layout_width="254dp"
+	    android:layout_height="wrap_content"
+	    android:layout_marginLeft="30dp"
+	    android:orientation="vertical" >
+	    	
+	    <!-- Text Linear Layout -->
+    	<LinearLayout 
+	        android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:orientation="horizontal">
+        
+        <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/set_description_text"/>
+	        
+	    </LinearLayout>
+		    	
+	    <EditText
+	        android:id="@+id/description"
+	        android:layout_width="398dp"
+	        android:layout_height="wrap_content"
+	        android:height="25dp"
+	        android:width="25dp" />
+	    
+	</LinearLayout>
+	
+	<!-- Seller Linear Layout -->
+	<LinearLayout
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:orientation="vertical"
+	    	android:layout_marginLeft="30dp" >
+	    
+	    <!-- Text Linear Layout -->
+	    <LinearLayout
+	        android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:orientation="horizontal" >
+	    
+		    <TextView 
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/set_seller_text"/>
+		 </LinearLayout>
+		   
+	    <EditText
+	        android:id="@+id/seller"
+	        android:layout_width="402dp"
+	        android:layout_height="wrap_content"
+	        android:height="25dp"
+	        android:width="25dp" />
+	    
+	</LinearLayout>
+	
+	<!-- Minimum and Asking Price Linear Layouts -->
+	<LinearLayout
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:orientation="horizontal" 
+    	android:layout_marginLeft="30dp">
+
+	    <!-- Minimum Price Linear Layout -->
+	    <LinearLayout 
+	        android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:orientation="vertical" 
+	    	android:layout_marginRight="20dp" >
+	        
+	        <!-- Text Linear Layout -->
+        	<LinearLayout 
+        	    android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:orientation="horizontal">
+        	    
+       	    <TextView 
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/set_minimum_price_text"/>
+	        	    
+	        </LinearLayout>
+        		
+		    <EditText
+		        android:id="@+id/minPrice"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:ems="4"
+		        android:height="25dp"
+		        android:width="25dp" />
+			    
+	    </LinearLayout>
+
+	    <!-- Asking Price Linear Layout -->
+		<LinearLayout
+		    android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:orientation="vertical"
+	    	android:layout_marginLeft="20dp" >
+			
+		    <!-- Text Linear Layout -->
+		    <LinearLayout
+		        android:layout_width="wrap_content"
+	    		android:layout_height="wrap_content"
+	    		android:orientation="horizontal" >
+	            
+		        <TextView 
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="@string/set_asking_price_text"
+			        android:layout_marginLeft="10dp"/>
+		    </LinearLayout>
+		    
+		    <EditText
+		        android:id="@+id/askingPrice"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:ems="50"
+		        android:height="25dp"
+		        android:width="25dp" />
+		    
+	    </LinearLayout>
+		    
+	</LinearLayout>
+	
+	<!-- Submit Button Linear Layout -->
+
+	<Button
+	    android:id="@+id/submit"
+	    android:layout_width="195dp"
+	    android:layout_height="wrap_content"
+	    android:layout_marginLeft="115dp"
+	    android:layout_marginTop="20dp"
+	    android:background="@drawable/custom_submit_button"
+	    android:gravity="center"
+	    android:text="@string/button_for_submit" />
+	
+</LinearLayout>

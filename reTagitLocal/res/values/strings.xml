@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">reTagit</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_add_to_inventory">AddToInventoryActivity</string>
+    <string name="title_activity_edit_item">EditItemActivity</string>
+    <string name="title_activity_add_new_clerk">AddNewClerkActivity</string>
+    <string name="title_activity_get_selling_item">GetSellingItem</string>
+    <string name="logoff_text">Log Off</string>
+    <string name="account_settings_text">Account Settings</string>
+    <string name="manage_accounts_text">Manage Accounts</string>
+    <string name="sell_item_text">Sell Item</string>
+    <string name="browse_items_text">Browse Items</string>
+    <string name="add_new_item_text">Add New Item</string>
+    <string name="cancel_text">Cancel</string>
+    <string name="add_new_clerk_text">Add New Clerk</string>
+    <string name="ok_text">OK</string>
+    <string name="set_password_text">Password</string>
+    <string name="set_employee_first_name_text">First Name</string>
+    <string name="set_employee_phone_text">Phone Number</string>
+    <string name="set_employee_last_name_text">Last Name</string>
+    <string name="button_for_submit">Submit</string>
+    <string name="set_asking_price_text">Asking Price</string>
+    <string name="set_minimum_price_text">Minimum Price</string>
+    <string name="set_seller_text">Seller</string>
+    <string name="set_description_text">Description</string>
+    <string name="set_category_text">Category</string>
+    <string name="set_date_text">Date</string>
+    <string name="set_id_no_text">ID no.</string>
+    <string name="button_for_QR">QR</string>
+    <string name="required_text">*Required</string>
+    <string name="seller_first_name">First Name</string>
+    <string name="seller_last_name">Last Name</string>
+    <string name="seller_address">Address</string>
+    <string name="seller_phone">Phone</string>
+    <string name="add_new_seller">Add New Seller</string>
+    <string name="sell_item">Sell Item</string>
+    <string name="name">Name</string>
+    <string name="title_activity_view_item">ViewItemActivity</string>
+
+    <!-- browse_items -->
+    <string name="browse_text">Browse Items</string>
+    <string name="date_text">Date</string>
+    <string name="category_text">Category</string>
+    <string name="asking_price_text">Asking Price</string>
+    <string name="sort_date_text">Sort by Date</string>
+    <string name="sort_cat_text">Sort by Category</string>
+    <string name="sort_price_text">Sort by Price</string>
+    
+    <!-- log_on_layout -->
+    <string name="welcome_text">Welcome</string>
+    <string name="user_name_hint">Phone Number</string>
+    <string name="password_hint">Password</string>
+    <string name="logon_button_text">Log On</string>
+    <string name="clear_button_text">Clear</string>
+    <string name="title_activity_log_on">LogOnActivity</string>
+    <string name="title_activity_sell_item">SellItemActivity</string>
+
+    <string name="set_name_text">Name</string>
+
+    <string name="title_activity_browse_item">BrowseItemActivity</string>
+    
+    <!-- View item -->
+    <string name="edit_item">Edit</string>
+    <string name="sell_item_button">Sell</string>
+    <string name="view_item">View Item</string>
+    
+    <!-- Edit item -->
+    <string name="edit_item_text">Edit Item</string>
+
+    <!-- Category Spinner -->
+	<string name="category_spinner">Category</string>
+	<string-array name="category_array">
+		<item>Clothes</item>
+		<item>Furniture</item>
+		<item>Toys</item>
+		<item>Electronics</item>
+	</string-array>
+
+</resources>

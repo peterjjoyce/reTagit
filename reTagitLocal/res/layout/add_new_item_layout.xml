@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:orientation="vertical"
+	android:background="@drawable/new_background">
+
+    <!-- Add Item Linear Layout -->
+	<LinearLayout
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content" >
+
+	    <!-- Text Line for Add New Item -->
+		<TextView 
+		    android:layout_height="wrap_content"
+			android:layout_width="wrap_content" 
+			android:text="@string/add_new_item_text" />
+		
+		<!-- Cancel Button -->
+		<Button
+		    android:id="@+id/cancel_button"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:background="@drawable/custom_cancel_button"
+		    android:text="@string/cancel_text" />
+		
+	</LinearLayout>
+	
+	<!-- Text Line for Required -->
+	<TextView 
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content" 
+		android:text="@string/required_text"
+		android:textColor="#d40000"
+		android:gravity="left"
+		android:layout_marginLeft="10dp" />
+	
+	<!-- Middle Linear Layout -->
+	<LinearLayout
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:gravity="center"
+	    android:layout_marginLeft="30dp">
+
+	    <!-- Button for Pictures -->
+	    <ImageButton
+	        android:id="@+id/photo_button"
+	        android:layout_width="96dp"
+	        android:layout_height="match_parent"
+	        android:src="@drawable/ic_launcher" />
+
+	    <!-- Item Linear Layout -->
+	    <LinearLayout
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical" >
+
+	       <LinearLayout
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content" >
+
+	            <!-- Button for bringing up the QR Scanner -->
+	            <Button
+	                android:id="@+id/qr_button"
+	                style="?android:attr/buttonStyleSmall"
+	                android:layout_width="wrap_content"
+	                android:layout_height="match_parent"
+	                android:text="@string/button_for_QR" />
+
+	            <TextView
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="@string/set_id_no_text" />
+	            
+	            <TextView
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="*"
+	                android:textColor="#d40000" />
+
+	            <EditText
+	                android:id="@+id/item_number_edittext"
+	                android:layout_width="214dp"
+	                android:layout_height="wrap_content"
+	                android:height="25dp"
+	                android:width="25dp" >
+
+	                <requestFocus />
+	                
+	            </EditText>
+	            
+	        </LinearLayout>
+
+	        <!-- Name Linear Layout -->
+	        <LinearLayout
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content" >
+
+	            <TextView
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="@string/set_name_text" />
+	            
+	            <TextView
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="*"
+	                android:textColor="#d40000" />
+
+	            <EditText
+	                android:id="@+id/name_edittext"
+	                android:layout_width="271dp"
+	                android:layout_height="wrap_content"
+	                android:inputType="" />
+
+	        </LinearLayout>
+
+	        <!-- Category Linear Layout -->
+	        <LinearLayout
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content" >
+
+	            <TextView
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="@string/set_category_text" />
+	            
+	            <Spinner
+	                android:layout_height="wrap_content"
+	                android:layout_width="wrap_content"
+	                android:id="@+id/category_spinner"/>
+
+				<TextView
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="*"
+	                android:textColor="#d40000" />
+
+	       	<!--<EditText
+	                android:id="@+id/category_edittext"
+	                android:layout_width="238dp"
+	                android:layout_height="wrap_content"
+	                android:height="25dp"
+	                android:width="25dp" /> -->
+
+	        </LinearLayout>
+	        
+	    </LinearLayout>
+	   	 
+	</LinearLayout>
+	
+	<!-- Description Linear Layout -->
+
+	<LinearLayout
+	    android:layout_width="254dp"
+	    android:layout_height="wrap_content"
+	    android:layout_marginLeft="30dp"
+	    android:orientation="vertical" >
+	    	
+	    <!-- Text Linear Layout -->
+    	<LinearLayout 
+	        android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:orientation="horizontal">
+        
+        <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/set_description_text"/>
+	    	
+    	<TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="*"
+             android:textColor="#d40000" />
+	        
+	    </LinearLayout>
+		    	
+	    <EditText
+	        android:id="@+id/description_edittext"
+	        android:layout_width="398dp"
+	        android:layout_height="wrap_content"
+	        android:height="25dp"
+	        android:width="25dp" />
+	    
+	</LinearLayout>
+	
+	<!-- Seller Linear Layout -->
+	<LinearLayout
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:orientation="vertical"
+	    	android:layout_marginLeft="30dp" >
+	    
+	    <!-- Text Linear Layout -->
+	    <LinearLayout
+	        android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:orientation="horizontal" >
+	    
+		    <TextView 
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/set_seller_text"/>
+		    
+		    <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="*"
+                android:textColor="#d40000" />
+		 </LinearLayout>
+		   
+	    <EditText
+	        android:id="@+id/seller_edittext"
+	        android:layout_width="402dp"
+	        android:layout_height="wrap_content"
+	        android:height="25dp"
+	        android:width="25dp" />
+	    
+	</LinearLayout>
+	
+	<!-- Minimum and Asking Price Linear Layouts -->
+	<LinearLayout
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:orientation="horizontal" 
+    	android:layout_marginLeft="30dp">
+
+	    <!-- Minimum Price Linear Layout -->
+	    <LinearLayout 
+	        android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:orientation="vertical" 
+	    	android:layout_marginRight="20dp" >
+	        
+	        <!-- Text Linear Layout -->
+        	<LinearLayout 
+        	    android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:orientation="horizontal">
+        	    
+       	    <TextView 
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/set_minimum_price_text"/>
+      		
+      			<TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="*"
+                android:textColor="#d40000" />
+	        	    
+	        </LinearLayout>
+        		
+		    <EditText
+		        android:id="@+id/minimumPrice_edittext"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:ems="4"
+		        android:height="25dp"
+		        android:width="25dp" />
+			    
+	    </LinearLayout>
+
+	    <!-- Asking Price Linear Layout -->
+		<LinearLayout
+		    android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:orientation="vertical"
+	    	android:layout_marginLeft="20dp" >
+			
+		    <!-- Text Linear Layout -->
+		    <LinearLayout
+		        android:layout_width="wrap_content"
+	    		android:layout_height="wrap_content"
+	    		android:orientation="horizontal" >
+	            
+		        <TextView 
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="@string/set_asking_price_text"
+			        android:layout_marginLeft="10dp"/>
+		    
+		    	<TextView
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="*"
+	                android:textColor="#d40000"
+	                android:layout_marginRight="10dp" />
+		    </LinearLayout>
+		    
+		    <EditText
+		        android:id="@+id/askingPrice_edittext"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:ems="50"
+		        android:height="25dp"
+		        android:width="25dp" />
+		    
+	    </LinearLayout>
+		    
+	</LinearLayout>
+	
+	<!-- Submit Button Linear Layout -->
+
+	<Button
+	    android:id="@+id/submit_button"
+	    android:layout_width="195dp"
+	    android:layout_height="wrap_content"
+	    android:layout_marginLeft="115dp"
+	    android:layout_marginTop="20dp"
+	    android:background="@drawable/custom_submit_button"
+	    android:gravity="center"
+	    android:text="@string/button_for_submit" />
+	
+</LinearLayout>

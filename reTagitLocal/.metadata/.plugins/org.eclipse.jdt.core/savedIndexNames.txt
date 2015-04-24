@@ -1,0 +1,4 @@
+INDEX VERSION 1.126+X:\CSCE320\reTagit\reTagit\reTagitLocal\.metadata\.plugins\org.eclipse.jdt.core
+2887262887.index
+992568489.index
+684848270.index

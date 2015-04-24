@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/new_background" >
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableBottom="@drawable/solid_line"
+        android:gravity="center"
+        android:text="Main Menu"
+        android:textColor="@android:color/black" />
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" >
+        
+        <Button
+            android:id="@+id/add_new_item_button"
+            android:layout_marginBottom="50dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/custom_general_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/add_new_item_text" />
+
+        <Button
+            android:id="@+id/browse_items_button"
+            android:layout_width="wrap_content"
+            android:layout_marginBottom="50dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/custom_general_button"
+            android:layout_height="wrap_content"
+            android:text="@string/browse_items_text" />
+
+    </LinearLayout>
+       
+    <!-- Whoa! a comment! -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" >
+        
+        <Button
+            android:id="@+id/sell_item_button"
+            android:layout_width="wrap_content"
+            android:layout_marginBottom="25dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/custom_general_button"
+            android:layout_height="wrap_content"
+            android:text="@string/sell_item_text" />
+
+        <Button
+            android:id="@+id/manage_accounts_button"
+            android:layout_width="wrap_content"
+            android:layout_marginBottom="25dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/custom_general_button"
+            android:layout_height="wrap_content"
+            android:text="@string/manage_accounts_text" />
+
+    </LinearLayout>
+    
+    <Button
+        android:id="@+id/account_settings_button"
+        android:layout_width="wrap_content"
+        android:background="@drawable/custom_general_button"
+        android:layout_height="wrap_content"
+        android:text="@string/account_settings_text" />
+    
+    <Button
+        android:id="@+id/log_off_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:height="5dp"
+        android:text="@string/logoff_text"
+        android:background="@drawable/custom_logout_button"
+        android:width="120dp" />
+
+ </LinearLayout>
