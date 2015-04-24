@@ -14,7 +14,7 @@ import com.loopj.android.http.RequestParams;
  */
 public class MyHTTPclient {
 
-	public static final String BASE_URL = "http://zoe.cs.plu.edu";
+	public static final String BASE_URL = "http://YOURURLHERE.com";
 	//public static final String PHOTOS_REL_URL = "/photos";
 	//public static final String THUMB_REL_URL = PHOTOS_REL_URL + "/128x128";
 	//public static final String LARGE_REL_URL = PHOTOS_REL_URL + "/600x600";
